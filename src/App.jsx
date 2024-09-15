@@ -75,11 +75,7 @@ function App() {
   ]);
 
   const toggleCheckboxValue = (name) => {
-    if (name == "uppercase") {
-      setIncludeUppercase((prev) => !prev);
-    } else if (name == "lowercase") {
-      setIncludeLowercase((prev) => !prev);
-    } else if (name == "number") {
+    if (name == "number") {
       setIncludeNumber((prev) => !prev);
     } else if (name == "symbol") {
       setIncludeSymbol((prev) => !prev);
@@ -107,8 +103,6 @@ function App() {
                 setCharacterLength={setCharacterLength}
               />
               <Checkboxes
-                includeUppercase={includeUppercase}
-                includeLowercase={includeLowercase}
                 includeNumber={includeNumber}
                 includeSymbol={includeSymbol}
                 toggleCheckboxValue={toggleCheckboxValue}
